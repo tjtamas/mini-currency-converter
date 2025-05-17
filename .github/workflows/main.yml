@@ -1,4 +1,4 @@
-name: HTML Validation
+name: HTML Check (htmlhint)
 
 on:
   push:
@@ -7,11 +7,20 @@ on:
     branches: [ main ]
 
 jobs:
-  validate-html:
+  html-lint:
+    name: Validate HTML with HTMLHint
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Run HTML5 Validator
-        uses: Cyb3r-Jak3/html5validator-action@v0.1.1
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install HTMLHint
+        run: npm install -g htmlhint
+
+      - name: Run HTMLHint
+        run: htmlhint **/*.html
