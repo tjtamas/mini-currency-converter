@@ -18,4 +18,9 @@ body {
     padding: 10px;
     width: 100%;
   }
-  
+  .chart-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
