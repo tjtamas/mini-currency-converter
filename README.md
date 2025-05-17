@@ -27,3 +27,7 @@ Clone the repo:
 ```bash
 git clone https://github.com/tjtamas/mini-currency-converter.git
 cd mini-currency-converter
+
+🔗 Live: [View Demo](https://tjtamas.github.io/mini-currency-converter/)  
+💾 Code: [GitHub Repo](https://github.com/tjtamas/mini-currency-converter)  
+📋 Tasks: [Trello Board](https://trello.com/b/8CgDOfX7/frontend-mini-projects)
