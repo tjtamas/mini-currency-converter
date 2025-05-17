@@ -24,3 +24,9 @@ body {
     background-color: #fff;
     border-radius: 10px;
   }
+  #amount {
+    width: 120px;
+    margin: 10px auto;
+    display: block;
+  }
+  
